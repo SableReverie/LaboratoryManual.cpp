@@ -210,6 +210,8 @@ int main () {
 
 
 #include <iostream>
+#include <cctype>
+#include <string>
 using namespace std;
 
 int main () {
@@ -223,14 +225,14 @@ int main () {
     cout << "Enter Unit(C for Celsius, F for Fahrenheit): ";
     cin >> unit;
     
-    if(unit == 'C'){
+    if(unit == 'C' || unit == 'c') {
         convertedTemperature = (temperature * 9/5) + 32;
-        cout << "Converted temperature: " << convertedTemperature << " Fahrenheit." << '\n';
-    } else if (unit == 'F') {
+        cout << "Converted temperature: " << convertedTemperature << " Fahrenheit." << endl;
+    } else if (unit == 'F' || unit == 'f') {
         convertedTemperature = (temperature - 32) * 5/9;
-        cout << "Converted temperature: " << convertedTemperature << " Celsius" << '\n';
+        cout << "Converted temperature: " << convertedTemperature << " Celsius" << endl;
     } else {
-        cout << "Invalid Unit\n";
+        cout << "Invalid Unit";
     }
     
     return 0;
