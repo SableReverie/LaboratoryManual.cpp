@@ -163,6 +163,7 @@ int main () {
 
 
 #include <iostream>
+#include <string>
 using namespace std;
 int main () {
     
@@ -185,17 +186,20 @@ int main () {
     
     totalAverage = (math + science + filipino + history + pe) / 5;
     
-    if(totalAverage >= 90) {
-        cout << "Grade: A" << '\n';
-    } else if(totalAverage >= 80) {
-        cout << "Grade: B" << '\n';
-    } else if(totalAverage >= 75) {
-        cout << "Grade: c" << '\n';
+    if(totalAverage >= 90 && totalAverage <= 100) {
+        cout << "Grade: A" << endl;
+    } else if(totalAverage >= 80 && totalAverage <= 89) {
+        cout << "Grade: B" << endl;
+    } else if(totalAverage >= 75 && totalAverage <= 79) {
+        cout << "Grade: c" << endl;
     } else {
-        cout << "Grade: F" << '\n';
+        cout << "Grade: F" << endl;
     }
-    return 0;
-}
+
+
+
+
+
 
 
 
