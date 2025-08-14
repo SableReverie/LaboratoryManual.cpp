@@ -167,7 +167,6 @@ using namespace std;
 int main () {
     
     float math,science,filipino,history,pe,totalAverage;
-    char again;
 
     cout << "Enter Mathematics grade: ";
     cin >> math;
