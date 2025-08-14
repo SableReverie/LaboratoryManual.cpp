@@ -195,9 +195,8 @@ int main () {
     } else {
         cout << "Grade: F" << endl;
     }
-
-
-
+return 0;
+}
 
 
 
