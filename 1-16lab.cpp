@@ -227,8 +227,8 @@ int main () {
         cout << "Enter a number: ";
         cin >> num;
         sum = sum + num; count++;
-        cout << "Sum = " << sum << endl;
     }
+        cout << "Sum = " << sum << endl;
     
     return 0;
 }
